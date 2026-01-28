@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_app/base/res/app_styles.dart';
+import 'package:ticket_app/base/widgets/big_dot.dart';
 
 class TicketView extends StatelessWidget {
   const TicketView({super.key});
@@ -29,7 +30,9 @@ class TicketView extends StatelessWidget {
                   "NYC",
                   style: AppStyles.headLineStyle3.copyWith(color: Colors.white),
                 ),
+                const BigDot(),
                 Expanded(child: Container()),
+                const BigDot(),
                 Text(
                   "NYC",
                   style: AppStyles.headLineStyle3.copyWith(color: Colors.white),
