@@ -25,6 +25,7 @@ class TicketView extends StatelessWidget {
         ),
         child: Column(
           children: [
+            //show departure and destination with icons first line
             Row(
               children: [
                 Text(
@@ -56,6 +57,26 @@ class TicketView extends StatelessWidget {
                 Expanded(child: Container()),
                 Text(
                   "LDN",
+                  style: AppStyles.headLineStyle3.copyWith(color: Colors.white),
+                ),
+              ],
+            ),
+            const SizedBox(height: 3),
+            //show departure and destination names with time
+            Row(
+              children: [
+                Text(
+                  "New-York",
+                  style: AppStyles.headLineStyle3.copyWith(color: Colors.white),
+                ),
+                Expanded(child: Container()),
+                Text(
+                  "8H 30M",
+                  style: AppStyles.headLineStyle3.copyWith(color: Colors.white),
+                ),
+                Expanded(child: Container()),
+                Text(
+                  "London",
                   style: AppStyles.headLineStyle3.copyWith(color: Colors.white),
                 ),
               ],
