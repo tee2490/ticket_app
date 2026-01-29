@@ -5,6 +5,7 @@ import 'package:ticket_app/screens/home/widgets/all_hotels.dart';
 import 'package:ticket_app/screens/home/widgets/all_tickets.dart';
 import 'package:ticket_app/screens/hotel/widgets/hotel_detail.dart';
 import 'package:ticket_app/screens/ticket/ticket_screen.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,14 +16,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        AppRoutes.homePage: (context) => const BottomNavBar(),
+        AppRoutes.homePage: (context) => BottomNavBar(),
         AppRoutes.allTickets: (context) => const AllTickets(),
         AppRoutes.ticketScreen: (context) => const TicketScreen(),
-        AppRoutes.allHotels:(context)=> const AllHotels(),
-        AppRoutes.hotelDetail:(context)=> const HotelDetail()
+        AppRoutes.allHotels: (context) => const AllHotels(),
+        AppRoutes.hotelDetail: (context) => const HotelDetail(),
       },
     );
   }
